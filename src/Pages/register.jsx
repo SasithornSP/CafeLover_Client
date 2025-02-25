@@ -5,7 +5,7 @@ import axios from 'axios'
 const initInput = {
     firstname:'',
     lastname:'',
-    identity:'',
+    email:'',
     password:'',
     confirmPassword:'',
 }
@@ -19,12 +19,12 @@ function register() {
 
     const hdlRegister = async e =>{
         try {
-            const {firstname,lastname,identity,password,confirmPassword }=input
+            const {firstname,lastname,email,password,confirmPassword }=input
 
             console.log('input', input)
             e.preventDefault()
            //**validation
-           if(!firstname.trim() || !lastname.trim() || !identity.trim() || !password.trim()){
+           if(!firstname.trim() || !lastname.trim() || !email.trim() || !password.trim()){
             return toast.error('Please fill all inputs')
         }
             if(password !== confirmPassword){
