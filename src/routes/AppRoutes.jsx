@@ -1,16 +1,14 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Route, Routes} from 'react-router';
 
-
-const router = createBrowserRouter([
-    { path: '/', element: <h1>Home Cafe Lover</h1> },
-    { path: '/menu', element: <h1>Menu</h1> },
-]);
 
 const AppRoutes = () => {
   return (
   <>
-  <RouterProvider router={router} />
+  <Routes>
+    <Route path="/" element={<h1>Home Cafe Lover</h1>} />
+    <Route path="/menu" element={<h1>Menu</h1>} />
+  </Routes>
   </>
   );
 };
