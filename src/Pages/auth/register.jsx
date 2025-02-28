@@ -55,7 +55,7 @@ function register() {
         </div>
         <input type="text" placeholder='Email or Phone number'className='input input-bordered w-full'name='identity' value={input.identity} onChange={hdlChange} />
         <input type="password" placeholder='New password'className='input input-bordered w-full' name='password' value={input.password} onChange={hdlChange} />
-        <input type="password" placeholder='Confirm password'className='input input-bordered w-full'  name='confirmPassword' value={input.confirmPassword} onChange={hdlChange} />
+        <input type="password" placeholder='Confirm password'className='input input-bordered w-full'  name='confirmPassword' value={input.confirmpassword} onChange={hdlChange} />
         <button className='btn btn-secondary text-xl text-white'>Sign up</button>
         <button className='btn btn-warning text-xl text-white' type='button' 
         onClick={hdlClearInput}
